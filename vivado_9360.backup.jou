@@ -1,0 +1,104 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Jan 04 10:10:39 2019
+# Process ID: 9360
+# Current directory: C:/Users/14405/Desktop/SnakeGame
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7808 C:\Users\14405\Desktop\SnakeGame\SnakeGame.xpr
+# Log file: C:/Users/14405/Desktop/SnakeGame/vivado.log
+# Journal file: C:/Users/14405/Desktop/SnakeGame\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/14405/Desktop/SnakeGame/SnakeGame.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project {C:/Users/14405/xilinx project/display7/display7.xpr}
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/14405/xilinx project/display7/display7.runs/impl_1/display7.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/14405/xilinx project/display7/display7.runs/impl_1/display7.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+close_project
+open_project C:/Users/14405/Desktop/SnakeGame/SnakeGame.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+place_ports {sel[0]} J17
+place_ports {sel[1]} J18
+place_ports {sel[2]} T9
+place_ports {sel[3]} J14
+place_ports {sel[4]} P14
+place_ports {sel[5]} T14
+set_property package_pin "" [get_ports [list  {sel[7]}]]
+place_ports {sel[6]} K2
+place_ports {sel[7]} U13
+save_constraints
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg_out[6]} {seg_out[5]} {seg_out[4]} {seg_out[3]} {seg_out[2]} {seg_out[1]} {seg_out[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg_out[6]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel[7]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel[7]} {sel[6]} {sel[5]} {sel[4]} {sel[3]} {sel[2]} {sel[1]} {sel[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel[6]}]]
+save_constraints
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel[7]}]]
+save_constraints
+close_design
+reset_run synth_1
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/top_greedy_snake.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/top_greedy_snake.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/top_greedy_snake.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/top_greedy_snake.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/top_greedy_snake.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/top_greedy_snake.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/top_greedy_snake.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw

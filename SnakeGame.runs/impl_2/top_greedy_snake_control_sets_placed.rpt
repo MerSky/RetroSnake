@@ -1,0 +1,79 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Fri Jan 04 13:14:58 2019
+| Host         : DESKTOP-NPI80JI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_greedy_snake_control_sets_placed.rpt
+| Design       : top_greedy_snake
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    26 |
+| Unused register locations in slices containing registers |    94 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              17 |            5 |
+| No           | No                    | Yes                    |             177 |           54 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              23 |            5 |
+| Yes          | No                    | Yes                    |             305 |          107 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------+----------------------------+------------------+------------------+----------------+
+|        Clock Signal        |        Enable Signal       | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------------------+----------------------------+------------------+------------------+----------------+
+|  U4/myclk/clk_tmp          |                            | rst_IBUF         |                1 |              1 |
+|  clk_cnt_reg[19]_i_2_n_0   | U4/VGA/hsync_i_1_n_0       | rst_IBUF         |                1 |              1 |
+|  clk_cnt_reg[19]_i_2_n_0   | U4/VGA/vsync_i_1_n_0       | rst_IBUF         |                1 |              1 |
+|  U4/VGA/color_out_reg[7]_0 |                            |                  |                1 |              2 |
+|  clk_IBUF_BUFG             | U1/E[0]                    | rst_IBUF         |                1 |              4 |
+|  clk_IBUF_BUFG             | U1/E[1]                    | rst_IBUF         |                2 |              4 |
+|  clk_IBUF_BUFG             | U5/left_key_last           | rst_IBUF         |                1 |              4 |
+|  clk_IBUF_BUFG             | U6/point[15]_i_1_n_0       | rst_IBUF         |                2 |              4 |
+|  clk_IBUF_BUFG             | U6/point[19]_i_1_n_0       | rst_IBUF         |                1 |              4 |
+|  clk_IBUF_BUFG             | U6/point[23]_i_1_n_0       | rst_IBUF         |                2 |              4 |
+|  clk_IBUF_BUFG             | U6/point[27]_i_1_n_0       | rst_IBUF         |                1 |              4 |
+|  clk_IBUF_BUFG             | U6/point[31]_i_1_n_0       | rst_IBUF         |                2 |              4 |
+|  clk_IBUF_BUFG             | U6/point[7]_i_1_n_0        | rst_IBUF         |                2 |              4 |
+|  clk_IBUF_BUFG             | U3/cube_x[0][5]_i_1_n_0    | rst_IBUF         |                3 |              6 |
+|  clk_IBUF_BUFG             | U3/cube_y[0][5]_i_1_n_0    | rst_IBUF         |                2 |              6 |
+|  clk_IBUF_BUFG             | U6/seg_out[6]_i_1_n_0      | rst_IBUF         |                6 |              7 |
+|  clk_IBUF_BUFG             | U3/cube_num[6]_i_1_n_0     | rst_IBUF         |                2 |              7 |
+|  clk_IBUF_BUFG             | U6/sel[7]_i_1_n_0          | rst_IBUF         |                8 |              8 |
+|  clk_cnt_reg[19]_i_2_n_0   | U4/VGA/line_cnt[9]_i_1_n_0 | rst_IBUF         |                3 |             10 |
+|  clk_IBUF_BUFG             | U2/apple_y[4]_i_1_n_0      | rst_IBUF         |                6 |             11 |
+|  clk_IBUF_BUFG             |                            |                  |                4 |             15 |
+|  clk_cnt_reg[19]_i_2_n_0   |                            | rst_IBUF         |                6 |             20 |
+|  clk_cnt_reg[19]_i_2_n_0   | U4/VGA/x_pos[9]_i_1_n_0    |                  |                5 |             23 |
+|  clk_IBUF_BUFG             | U1/clk_cnt[31]_i_1_n_0     | rst_IBUF         |                5 |             32 |
+|  clk_IBUF_BUFG             |                            | rst_IBUF         |               47 |            156 |
+|  clk_IBUF_BUFG             | U3/cube_y                  | rst_IBUF         |               56 |            180 |
++----------------------------+----------------------------+------------------+------------------+----------------+
+
+

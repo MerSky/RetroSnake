@@ -1,0 +1,449 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Jan 03 19:15:58 2019
+# Process ID: 14040
+# Current directory: C:/Users/14405/Desktop/SnakeGame
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8000 C:\Users\14405\Desktop\SnakeGame\SnakeGame.xpr
+# Log file: C:/Users/14405/Desktop/SnakeGame/vivado.log
+# Journal file: C:/Users/14405/Desktop/SnakeGame\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/14405/Desktop/SnakeGame/SnakeGame.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 827.859 ; gain = 168.199
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream
+[Thu Jan 03 19:16:39 2019] Launched synth_1...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/synth_1/runme.log
+[Thu Jan 03 19:16:39 2019] Launched impl_2...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 831.328 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292710490A
+set_property PROGRAM.FILE {C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/top_greedy_snake.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/top_greedy_snake.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/Snake_Eatting_Apple.v" into library work [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/Snake_Eatting_Apple.v:1]
+[Thu Jan 03 21:36:53 2019] Launched synth_1...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/synth_1/runme.log
+launch_runs impl_2
+[Thu Jan 03 21:40:13 2019] Launched impl_2...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/runme.log
+launch_runs impl_2 -to_step write_bitstream
+[Thu Jan 03 21:43:36 2019] Launched impl_2...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 958.738 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292710490A
+set_property PROGRAM.FILE {C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/top_greedy_snake.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/top_greedy_snake.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/Seg_Display.v" into library work [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/Seg_Display.v:1]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/Seg_Display.v:11]
+[Thu Jan 03 23:42:08 2019] Launched synth_1...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/Seg_Display.v" into library work [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/Seg_Display.v:1]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/Seg_Display.v:11]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/top_greedy_snake.v" into library work [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/top_greedy_snake.v:1]
+[Thu Jan 03 23:44:07 2019] Launched synth_1...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/synth_1/runme.log
+reset_run synth_1
+update_compile_order -fileset sources_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/Seg_Display.v" into library work [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/Seg_Display.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/top_greedy_snake.v" into library work [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/top_greedy_snake.v:1]
+[Thu Jan 03 23:45:37 2019] Launched synth_1...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/top_greedy_snake.v" into library work [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/top_greedy_snake.v:1]
+[Thu Jan 03 23:45:51 2019] Launched synth_1...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/synth_1/runme.log
+launch_runs impl_2
+[Thu Jan 03 23:46:58 2019] Launched impl_2...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/runme.log
+reset_run impl_2 -noclean_dir 
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/top_greedy_snake.v" into library work [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/top_greedy_snake.v:1]
+[Thu Jan 03 23:48:15 2019] Launched synth_1...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: 'G19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:13]
+CRITICAL WARNING: [Common 17-69] Command failed: 'H19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:14]
+CRITICAL WARNING: [Common 17-69] Command failed: 'J19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:15]
+CRITICAL WARNING: [Common 17-69] Command failed: 'N19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:16]
+CRITICAL WARNING: [Common 17-69] Command failed: 'N18' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:19]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:25]
+CRITICAL WARNING: [Common 17-69] Command failed: 'P19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:26]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W5' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'sel[0]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[1]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[2]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[3]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-69] Command failed: 'W7' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:35]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W6' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:36]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V8' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:38]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U5' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'sel[0]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[1]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[2]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[3]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-69] Command failed: 'W19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:57]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T17' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'sel[0]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1331.199 ; gain = 351.074
+set_property package_pin "" [get_ports [list  {seg_out[7]}]]
+set_property is_loc_fixed true [get_ports [list  {seg_out[7]}]]
+save_constraints
+close_design
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/top_greedy_snake.v" into library work [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/top_greedy_snake.v:1]
+[Thu Jan 03 23:53:32 2019] Launched synth_1...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: 'G19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:13]
+CRITICAL WARNING: [Common 17-69] Command failed: 'H19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:14]
+CRITICAL WARNING: [Common 17-69] Command failed: 'J19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:15]
+CRITICAL WARNING: [Common 17-69] Command failed: 'N19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:16]
+CRITICAL WARNING: [Common 17-69] Command failed: 'N18' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:19]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:25]
+CRITICAL WARNING: [Common 17-69] Command failed: 'P19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:26]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W5' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'sel[0]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[1]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[2]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[3]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-69] Command failed: 'W7' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:35]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W6' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:36]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V8' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:38]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U5' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'sel[0]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[1]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[2]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sel[3]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_out[7]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-69] Command failed: 'W19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:57]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T17' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'sel[0]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_runs impl_2
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1712.199 ; gain = 0.000
+[Thu Jan 03 23:55:29 2019] Launched impl_2...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/runme.log
+launch_runs impl_2 -to_step write_bitstream
+[Thu Jan 03 23:57:53 2019] Launched impl_2...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292710490A
+set_property PROGRAM.FILE {C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/top_greedy_snake.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/top_greedy_snake.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+close_design
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/top_greedy_snake.v" into library work [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/top_greedy_snake.v:1]
+[Fri Jan 04 00:09:43 2019] Launched synth_1...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: 'G19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:13]
+CRITICAL WARNING: [Common 17-69] Command failed: 'H19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:14]
+CRITICAL WARNING: [Common 17-69] Command failed: 'J19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:15]
+CRITICAL WARNING: [Common 17-69] Command failed: 'N19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:16]
+CRITICAL WARNING: [Common 17-69] Command failed: 'N18' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:19]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:25]
+CRITICAL WARNING: [Common 17-69] Command failed: 'P19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:26]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W5' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:27]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W7' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:31]
+CRITICAL WARNING: [Common 17-69] Command failed: 'W6' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:32]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V8' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:34]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U5' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'seg_out[7]'. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-69] Command failed: 'W19' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:49]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T17' is not a valid site or package pin name. [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc:51]
+Finished Parsing XDC File [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close_design
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/top_greedy_snake.v" into library work [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/top_greedy_snake.v:1]
+[Fri Jan 04 00:23:30 2019] Launched synth_1...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/synth_1/runme.log
+launch_runs impl_2
+[Fri Jan 04 00:24:33 2019] Launched impl_2...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/runme.log
+launch_runs impl_2 -to_step write_bitstream
+[Fri Jan 04 00:26:09 2019] Launched impl_2...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1716.809 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292710490A
+set_property PROGRAM.FILE {C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/top_greedy_snake.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/top_greedy_snake.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/top_greedy_snake.v" into library work [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/sources_1/new/top_greedy_snake.v:1]
+[Fri Jan 04 00:48:11 2019] Launched synth_1...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc]
+Finished Parsing XDC File [C:/Users/14405/Desktop/SnakeGame/SnakeGame.srcs/constrs_1/new/snake_basys3_xc.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_runs impl_2
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 1716.809 ; gain = 0.000
+[Fri Jan 04 00:50:49 2019] Launched impl_2...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/runme.log
+launch_runs impl_2 -to_step write_bitstream
+[Fri Jan 04 00:53:47 2019] Launched impl_2...
+Run output will be captured here: C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1716.809 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292710490A
+set_property PROGRAM.FILE {C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/top_greedy_snake.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/14405/Desktop/SnakeGame/SnakeGame.runs/impl_2/top_greedy_snake.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+close_design
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 04 00:55:49 2019...

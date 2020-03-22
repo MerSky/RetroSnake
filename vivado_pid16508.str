@@ -1,0 +1,95 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 16508
+
+Current time: 	1/6/19 12:30:39 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1280x720
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=SimSun,name=宋体,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	14405
+User home directory: C:/Users/14405
+User working directory: C:/Users/14405/Desktop/数字逻辑/贪吃蛇大作业/SnakeGame
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/14405/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/14405/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	218 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 454 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 29 MB (+27959kb) [00:00:06]
+// [Engine Memory]: 406 MB (+274459kb) [00:00:06]
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\14405\Desktop\数字逻辑\贪吃蛇大作业\SnakeGame\SnakeGame.xpr. Version: Vivado v2016.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/14405/Desktop/数字逻辑/贪吃蛇大作业/SnakeGame/SnakeGame.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/14405/Desktop/数字逻辑/贪吃蛇大作业/SnakeGame/SnakeGame.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 44 MB (+13784kb) [00:00:09]
+// [Engine Memory]: 534 MB (+112350kb) [00:00:09]
+// [GUI Memory]: 48 MB (+2220kb) [00:00:11]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'. 
+// [GUI Memory]: 52 MB (+1253kb) [00:00:12]
+// HMemoryUtils.trashcanNow. Engine heap size: 552 MB. GUI used memory: 32 MB. Current time: 1/6/19 12:30:44 PM CST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: SnakeGame; location: C:/Users/14405/Desktop/数字逻辑/贪吃蛇大作业/SnakeGame; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 820.523 ; gain = 159.988 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 562 MB (+1320kb) [00:00:21]
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // z:k (G:JPanel, cv:JFrame)
+// PAPropertyPanels.initPanels (snake_tb.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, snake_tb (snake_tb.v)]", 5, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, snake_tb (snake_tb.v)]", 5, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectCodeEditor("snake_tb.v", 266, 102); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("snake_tb.v", 2, 14); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("snake_tb.v", 66, 218, true, false, false, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Shift Key
+typeControlKey((HResource) null, "snake_tb.v", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 57 MB (+2645kb) [00:00:40]
+// [GUI Memory]: 60 MB (+718kb) [00:03:15]
+// [GUI Memory]: 63 MB (+87kb) [00:05:11]
+// [GUI Memory]: 67 MB (+301kb) [00:08:26]
